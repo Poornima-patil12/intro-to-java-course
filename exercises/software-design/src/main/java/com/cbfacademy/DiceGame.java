@@ -12,6 +12,11 @@ public class DiceGame implements Game {
         player2.setName("Player 2");
     }
 
+    public DiceGame(Player player1, Player player2) {
+        this.player1 = player1;
+        this.player2 = player2;
+    }
+
     public String play() {
         int score1 = 0;
         int score2 = 0;
