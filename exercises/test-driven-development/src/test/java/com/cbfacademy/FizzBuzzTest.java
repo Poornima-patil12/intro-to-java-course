@@ -1,8 +1,8 @@
 package com.cbfacademy;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.CoreMatchers.is;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -14,10 +14,5 @@ public class FizzBuzzTest {
         assertThat(actual, is("1"));
         // assertEquals("Fizz", FizzBuzz.get(3));
         // assertEquals("FizzBuzz", FizzBuzz.get(15));
-    }
-
-    private boolean is(String string) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'is'");
     }
 }
