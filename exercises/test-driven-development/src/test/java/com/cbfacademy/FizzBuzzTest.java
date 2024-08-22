@@ -9,10 +9,18 @@ import org.junit.jupiter.api.Test;
 public class FizzBuzzTest {
     @Test
     @DisplayName("returns when input is 1")
-    public void printsFizz() {
+
+    public void printsFizz1() {
         final String actual = FizzBuzz.get(1);
         assertThat(actual, is("1"));
-        // assertEquals("Fizz", FizzBuzz.get(3));
-        // assertEquals("FizzBuzz", FizzBuzz.get(15));
+    }
+
+    @Test
+    @DisplayName("returns when input is 3")
+
+    public void printsFizz3() {
+        final String actual = FizzBuzz.get(3);
+        assertThat(actual, is("3"));
+
     }
 }
